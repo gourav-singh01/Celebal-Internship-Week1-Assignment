@@ -29,3 +29,23 @@ This repository contains my weekly assignment submissions for the Celebal Techno
 4. Performed multi-table INNER and LEFT JOIN operations to track customer histories.
 5. Implemented conditional tracking blocks using CASE logic.
 6. Modeled a secure ACID-compliant SQL transaction with explicit BEGIN, COMMIT, and ROLLBACK handling.
+
+---
+
+## 📁 Week 3: Advanced SQL Analytics & Insights
+* `SQL_Assignment_Week3.ipynb` - Notebook containing the primary written coding tasks, advanced joins, and structural queries.
+* `SQL_Task_Week3.ipynb` - Notebook implementing the specific multi-table normalization schema and mini-project queries from the PDF task sheet.
+
+### Tasks Completed (Relational Schema & Advanced Queries)
+1. **Data Normalization:** Separated the raw superstore dataset into three structured relational tables (`customers`, `products`, and `orders`) using `SELECT DISTINCT` to eliminate data duplication.
+2. **Subqueries:** Wrote query blocks to isolate orders with sales above the company average and to extract the maximum transaction value recorded for every unique customer.
+3. **Common Table Expressions (CTEs):** Used CTEs to aggregate total sales per user profile and combined them with subqueries to filter customers outperforming the average spending benchmark.
+4. **Window Functions:** Applied `RANK()` over customer metrics to sort the entire user base by total sales, and used `ROW_NUMBER() OVER (PARTITION BY...)` to sequentially number every transaction within each customer account.
+5. **Integrated Query Matrix:** Combined a JOIN, a CTE, and `DENSE_RANK()` into a single final script to print a leaderboard of the top 10 highest-spending customers.
+
+### 📊 Mini Project: Customer Sales Insights
+Resolved targeted e-commerce business inquiries directly from the assignment PDF guidelines:
+* Identified the top 5 and bottom 5 customers by sales revenue.
+* Filtered and extracted inactive accounts that registered exactly 1 single order.
+* Found all customer accounts tracking above-average sales totals.
+* Discovered the maximum individual order value associated with each unique customer.
